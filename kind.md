@@ -1,6 +1,6 @@
 # Kind
 
-Install Kind cluster:
+Install 3 nodes Kind cluster:
 ```bash
 kind create cluster \
   --name cilium-lab \
