@@ -14,6 +14,8 @@ helm repo add cilium https://helm.cilium.io/
 
 Install Cilium:
 ```bash
-helm upgrade -i cilium cilium/cilium \
-  --namespace kube-system
+helm install cilium cilium/cilium \
+  --namespace kube-system \
+  --set ipam.mode=kubernetes \
+  --set kubeProxyReplacement=true
 ```
