@@ -28,7 +28,9 @@ kubectl expose deployment nginx --port=80 --name=nginx --type=LoadBalancer
 
 Get inside docker node:
 ```bash
+docker exec -it cilium-lab-control-plane bash
 docker exec -it cilium-lab-worker2 bash
+docker exec -it cilium-lab-worker bash
 ```
 
 Test connection:
