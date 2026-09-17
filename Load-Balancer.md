@@ -31,7 +31,7 @@ Get inside docker node:
 docker exec -it cilium-lab-worker2 bash
 ```
 
-test connection:
+Test connection:
 ```
 curl 172.19.0.10
 ```
