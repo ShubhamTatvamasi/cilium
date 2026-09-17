@@ -10,7 +10,7 @@ metadata:
   name: default-pool
 spec:
   blocks:
-    - cidr: 172.19.0.3/32
+    - cidr: 172.19.0.10/32
 EOF
 ```
 
