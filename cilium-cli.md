@@ -12,3 +12,9 @@ Check the cilium status:
 cilium status
 ```
 
+
+Browser Hubble UI:
+```bash
+cilium hubble ui
+```
+
