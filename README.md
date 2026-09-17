@@ -2,6 +2,8 @@
 
 https://artifacthub.io/packages/helm/cilium/cilium
 
+https://docs.cilium.io/en/stable/
+
 Add Cilium repo:
 ```bash
 helm repo add cilium https://helm.cilium.io/
