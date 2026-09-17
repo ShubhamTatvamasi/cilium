@@ -22,5 +22,6 @@ helm upgrade -i cilium cilium/cilium \
   --set clustermesh.useAPIServer=true \
   --set clustermesh.config.enabled=true \
   --set cluster.name=cluster1 \
-  --set cluster.id=1
+  --set cluster.id=1 \
+  --set bgpControlPlane.enabled=true
 ```
