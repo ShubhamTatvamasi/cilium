@@ -1,8 +1,8 @@
 # Load Balancer
 
 
-
-```
+Create an IP pool:
+```yaml
 kubectl create -f - << EOF
 apiVersion: cilium.io/v2
 kind: CiliumLoadBalancerIPPool
