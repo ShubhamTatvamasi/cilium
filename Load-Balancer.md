@@ -1,5 +1,9 @@
 # Load Balancer
 
+Get the nodes details:
+```bash
+kubectl get nodes -o wide
+```
 
 Create an IP pool:
 ```yaml
@@ -16,10 +20,20 @@ EOF
 
 ---
 
-Test:
+Deploy nginx:
 ```bash
 kubectl create deployment nginx --image=nginx:alpine
 kubectl expose deployment nginx --port=80 --name=nginx --type=LoadBalancer
+```
+
+Get inside docker node:
+```bash
+docker exec -it cilium-lab-worker2 bash
+```
+
+test connection:
+```
+curl 172.19.0.10
 ```
 
 Cleanup:
