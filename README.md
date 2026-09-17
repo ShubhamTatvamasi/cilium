@@ -20,5 +20,7 @@ helm upgrade -i cilium cilium/cilium \
   --set hubble.relay.enabled=true \
   --set hubble.ui.enabled=true \
   --set clustermesh.useAPIServer=true \
-  --set clustermesh.config.enabled=true
+  --set clustermesh.config.enabled=true \
+  --set cluster.name=cluster1 \
+  --set cluster.id=1
 ```
