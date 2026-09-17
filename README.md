@@ -18,5 +18,7 @@ helm upgrade -i cilium cilium/cilium \
   --set k8sServiceHost=cilium-lab-control-plane \
   --set k8sServicePort=6443 \
   --set hubble.relay.enabled=true \
-  --set hubble.ui.enabled=true
+  --set hubble.ui.enabled=true \
+  --set clustermesh.useAPIServer=true \
+  --set clustermesh.config.enabled=true
 ```
